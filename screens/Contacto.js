@@ -3,7 +3,7 @@ import { View, Text, Linking, TouchableOpacity, TextInput, StyleSheet, ScrollVie
 
 const Contacto = () => {
   const [contactList, setContactList] = useState([
-    { id: 1, phoneNumber: '70461381', description: 'Descripción del contacto 1' },
+    { id: 1, phoneNumber: '168', description: 'Atención de Consultas médicas en línea del CCESD llame si se encuentra en caso de urgencio u emergencia' },
     // Puedes agregar más objetos de contacto aquí según sea necesario
   ]);
 

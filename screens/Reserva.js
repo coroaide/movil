@@ -63,8 +63,8 @@ const Reserva = () => {
         style={[styles.input, { height: 100 }]}
         placeholder="Tipo de atención"
         multiline
-        value={reason}
-        onChangeText={(text) => setReason(text)}
+        value={tipo}
+        onChangeText={(text) => setTipo(text)}
       />
           
       <Button title="Reservar" onPress={handleReservation} />

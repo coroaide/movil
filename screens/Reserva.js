@@ -8,11 +8,12 @@ const Reserva = () => {
   const [date, setDate] = useState('');
   const [time, setTime] = useState('');
   const [reason, setReason] = useState('');
+  const [tipo, setTipo] = usesState('');
 
   const handleReservation = () => {
     // Aquí puedes implementar la lógica para enviar los detalles de la reserva
 
-    if (name === '' || date === '' || time === '' || reason === '') {
+    if (name === '' || date === '' || time === '' || reason === '' || tipo == ''S) {
       Alert.alert('Campos vacíos', 'Por favor completa todos los campos');
       return;
     }
@@ -26,6 +27,7 @@ const Reserva = () => {
     setDate('');
     setTime('');
     setReason('');
+    setTipo('');
   };
 
   return (
@@ -56,6 +58,15 @@ const Reserva = () => {
         value={reason}
         onChangeText={(text) => setReason(text)}
       />
+
+        <TextInput
+        style={[styles.input, { height: 100 }]}
+        placeholder="Tipo de atención"
+        multiline
+        value={reason}
+        onChangeText={(text) => setReason(text)}
+      />
+          
       <Button title="Reservar" onPress={handleReservation} />
     </View>
   );
